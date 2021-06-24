@@ -1,0 +1,101 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #393c57;
+}
+
+.test-js-container {
+	max-width: 975px;
+	width: 100%;
+	margin: 2vmax auto;
+	border: 1px solid #393c57;
+}
+.test-js-slider img {
+	border-bottom: 1px solid #393c57;
+	width: 100%;
+}
+
+
+
+.test-js-values {
+	padding: 1em;
+	user-select: none;
+}
+
+.value-js {
+	padding: 0.5em 1em;
+	margin: 0.5em;
+	border-radius: 0.5em;
+	border: 1px solid #393c57;
+	cursor: pointer;
+	transition: .3s;
+}
+.-js {
+	padding: 0.5em 1em;
+	margin: 0.5em;
+	border-radius: 0.5em;
+	border: 1px solid #393c57;
+	cursor: pointer;
+	transition: .3s;
+}
+.value-js:hover {
+	background: #ffe364;
+}
+.value-js:active {
+	background: #ecc646;
+}
+.activeJs {
+	background: #ff592a !important ;
+	color: #fff;
+}
+
+.btns {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+}
+.button-start {
+	background: #ffe364;
+
+	text-transform: uppercase;
+	border: 1px solid #393c57;
+	width: 200px;
+	font-weight: 900;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	margin: 1vmax auto;
+	text-align: center;
+	cursor: pointer;
+	font-size: 1.5em;
+}
+
+.dn {
+	display: none;
+}
+
+.a {
+	background: #f44336;
+	color: #fff;
+}
+.a:hover {
+	background: #f44336;
+}	/*console.log(keyArrIndex);
+	console.log(keyIndex);
+	console.log(rndArrIndex);*/
+
+
+	@media screen and (max-height: 768px) {
+		.test-js-container {
+			display: flex;
+			max-width: 975px;
+		}
+		.test-js {
+			flex-basis: 55%;
+		}
+		.test-js-slider img {
+			border-bottom: 0px solid #393c57;
+			height: 100%;
+			flex-basis: 45%;
+			display: block;
+		}
+	}
